@@ -3,7 +3,7 @@ import { store } from "../store";
 import { showLoader,hideLoader } from "../store/uiSlice";
 
 export const api = axios.create({
-  baseURL: '/data',
+  baseURL: 'https://booklerbackend-production.up.railway.app/',
   headers: {
     'Content-Type': 'application/json'
   }

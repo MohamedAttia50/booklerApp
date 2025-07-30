@@ -6,8 +6,8 @@ export const fetchHotels = createAsyncThunk(
   "hotels/fetchHotels",
    async (filters = {}, thunkAPI) => {
     try {
-      const response = await api.get("/db.json");
-      let hotels = response.data.hotels;
+      const response = await api.get("hotels");
+      let hotels = response.data;
       
       // Client-side filtering
       if (filters.search) {
@@ -32,11 +32,13 @@ export const fetchHotels = createAsyncThunk(
 // Async Thunk to fetch a single hotel by ID
 export const fetchHotelById = createAsyncThunk(
   "hotels/fetchHotelById",
-  async (id) => {
-    const response = await api.get(`/db.json`);
-    const hotel =response.data.hotels.find((h)=>h.id ===id);
-    if (!hotel) throw new Error("Hotel not found");
-    return hotel;
+  async (id, thunkAPI) => {
+    try {
+      const response = await api.get(`/hotels/${id}`);
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
   }
 );
 

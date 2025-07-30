@@ -29,14 +29,23 @@ export default function Home() {
 
   useEffect(() => {
     api
-      .get("/db.json")
+      .get("recommended_hotels")
       .then((res) => {
-        setRecomendedData(res.data.recommended_hotels);
-        setBestOfferData(res.data.best_offer);
+        setRecomendedData(res.data);
       })
       .catch((err) => {
-        console.error("Failed to load data", err);
-      });
+        console.error("Failed to recomeneded data", err);
+      })
+
+      api
+      .get("best_offer")
+      .then((res)=>{
+        setBestOfferData(res.data)
+      })
+      .catch((err) => {
+        console.error("Failed to load best offer", err);
+      })
+
   }, []);
 
   return (

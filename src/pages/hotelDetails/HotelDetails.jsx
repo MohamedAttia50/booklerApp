@@ -29,10 +29,10 @@ export default function HotelDetails() {
 
   useEffect(() => {
     api
-      .get("/db.json")
+      .get("recommended_hotels")
       .then((res) => {
-        setRecomendedData(res.data.recommended_hotels);
-        console.log("API response:", res.data.recommended_hotels);
+        setRecomendedData(res.data);
+        console.log("API response:", res.data);
       })
       .catch((err) => {
         console.error("Failed to fetch recommended hotels", err);
