@@ -1,0 +1,7 @@
+.not-found{
+        background-color: rgba(25, 29, 35, 0.05);
+    height: 100vh;
+    h2{
+        font-size: 60px;
+    }
+}

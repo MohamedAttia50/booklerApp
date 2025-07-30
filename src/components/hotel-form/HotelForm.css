@@ -1,0 +1,17 @@
+.hotel-form input  {
+    background-color: #191D230D;
+}
+.hotel-form label{
+    color: #B8C1DE;
+}
+/* .hotel-form select{
+width: 200px !important;
+background-color: #191D230D !important;
+
+}
+.hotel-form input,select{
+    width: 100%;
+} */
+.hotel-form{
+    margin-top: -15px;
+}

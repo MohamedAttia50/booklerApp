@@ -1,0 +1,26 @@
+.login-img{
+    background-color: #0A69DA;
+    padding: 90px 0;
+    height: 100vh;
+
+}
+.login-logo img{
+width: 205px;
+height: 51px;
+}
+.other-method {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  color:black;
+  width: 50%;
+  margin: auto;
+}
+
+.other-method::before,
+.other-method::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #cccaca;
+}

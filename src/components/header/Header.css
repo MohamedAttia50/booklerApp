@@ -1,0 +1,67 @@
+.main-header{
+    background-image: url('/assets/images/Header\ BG.jpg');
+    height: 15vh;
+    background-position:center;
+    background-size: cover;
+}
+.user-dropdown-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 6px 15px 6px 8px;
+  border-radius: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.user-name {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.dropdown-icon {
+  color: white;
+  font-size: 12px;
+}
+
+.user-dropdown-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: white;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  min-width: 160px;
+  z-index: 999;
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 10px 15px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}

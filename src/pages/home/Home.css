@@ -1,0 +1,104 @@
+.header-content{
+    background-image: url('/assets/images/Header BG.jpg');
+height: 50vh;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+
+i{
+    cursor: pointer !important;
+    color: white;
+}
+.hotel-form-co{
+  position: absolute;
+  bottom: -10%;
+
+
+}
+section{
+  background-color: #191D230D;
+}
+
+.card-container{
+  overflow: auto;
+  scrollbar-width: none;
+
+}
+
+.home-header-icons{
+  position: absolute;
+  bottom:30% ;
+  left: 25%;
+
+
+}
+.home-header-icons div{
+        padding: 5px;
+        border-radius: 5px;
+}
+.home-header-icons div:hover{
+    background-color: #0A6ADA;
+}
+.home-header-icons i{
+  color: white;
+}
+/* User Dropdown Styles */
+.user-dropdown-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-name {
+  color: white;
+  font-weight: 500;
+}
+
+.dropdown-icon {
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-icon.rotate {
+  transform: rotate(180deg);
+}
+
+.user-dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 150px;
+  z-index: 100;
+  padding: 8px 0;
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background: #f5f5f5;
+}

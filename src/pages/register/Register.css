@@ -1,0 +1,32 @@
+.register-img{
+    background-color: #0A69DA;
+    padding: 90px 0;
+    height: 110vh;
+}
+.register-logo img{
+width: 205px;
+height: 51px;
+}
+.login-methods div :hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.form-field{
+    padding-top: .5rem;
+}
+.other-method {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  color:black;
+  width: 50%;
+  margin: auto;
+}
+
+.other-method::before,
+.other-method::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #cccaca;
+}

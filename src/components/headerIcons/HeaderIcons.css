@@ -1,0 +1,18 @@
+.header-icons {
+  position: absolute;
+  top:3% ;
+  left: 15%;
+
+
+}
+.header-icons div{
+        padding: 5px;
+        border-radius: 5px;
+}
+.header-icons div:hover{
+    background-color: #0A6ADA;
+}
+.header-icons i{
+  color: white;
+}
+

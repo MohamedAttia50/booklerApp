@@ -1,0 +1,8 @@
+.hotel-details{
+    background-color: rgba(25, 29, 35, 0.05);
+    height: auto;
+}
+.card-container{
+    overflow: auto;
+    scrollbar-width: none;
+}

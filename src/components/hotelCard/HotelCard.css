@@ -1,0 +1,11 @@
+.hotel-card img{
+    max-height: 175px;
+}
+.rate-icon{
+    right: 5px;
+    top: 30px;
+    padding: 2px 5px;
+    color: white;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
