@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-import HeaderIcons from "../headerIcons/headerIcons";
+import HeaderIcons from '../headerIcons/HeaderIcons'
 import { useDispatch, useSelector } from "react-redux";
 import { logoutUser } from "../../store/authThunks";
 export default function Header() {
@@ -17,7 +17,7 @@ export default function Header() {
         <div className="user-dropdown-wrapper me-5 pe-5" onClick={toggleDropdown}>
           <div className="user-dropdown-toggle">
             <img
-              src="https://i.imgur.com/0y0y0y0.jpg" // Replace with real user photo
+              src="https://i.imgur.com/0y0y0y0.jpg" 
               alt="User"
               className="user-avatar"
             />
